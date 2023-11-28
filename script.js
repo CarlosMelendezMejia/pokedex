@@ -40,27 +40,3 @@ function showPokemon(poke) {
     </div>`;
     pokemonList.append(div);
 }
-
-/*
-<div class="pokemon">
-    <p class="pokemon-id-back">#025</p>
-    <div class="pokemon-image">
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pikachu">
-    </div>
-    <div class="pokemon-info">
-        <div class="container-name">
-            <p class="pokemon-id">#025</p>
-            <h2 class="pokemon-name">Pikachu</h2>
-        </div>
-        <div class="pokemon-type">
-            <p class="electric type">ELECTRIC</p>
-            <p class="fighting type">FIGHTING</p>
-        </div>
-        <div class="pokemon-stats">
-            <p class="height stat">4M</p>
-            <P class="weight stat">60KG</P>
-        </div>
-    </div>
-</div>
-
-*/
