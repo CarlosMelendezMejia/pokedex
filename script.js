@@ -1,8 +1,9 @@
 const pokemonList = document.querySelector("#PokemonList");
 const headerButtons = document.querySelectorAll(".btn-header");
+const total = 494;
 let url = "https://pokeapi.co/api/v2/pokemon/";
 
-for (let i = 1; i <= 151; i++ ){
+for (let i = 1; i <= total; i++ ){
     fetch(url + i)
         .then((response) => response.json())
         .then(data => showPokemon(data))
@@ -36,7 +37,7 @@ function showPokemon(poke) {
         </div>
         <div class="pokemon-stats">
             <p class="height stat">${poke.height}FT</p>
-            <P class="weight stat">${poke.weight}G</P>
+            <P class="weight stat">${poke.weight}LB</P>
         </div>
     </div>`;
     pokemonList.append(div);
@@ -47,7 +48,7 @@ headerButtons.forEach(button => button.addEventListener ("click", (event) => {
 
     pokemonList.innerHTML = "";
 
-    for (let i = 1; i <= 151; i++) {
+    for (let i = 1; i <= total; i++) {
         fetch(url + i)
             .then((response) => response.json())
             .then(data => {
